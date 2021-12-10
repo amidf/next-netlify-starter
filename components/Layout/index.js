@@ -1,10 +1,11 @@
+// import Header from "../common/Header";
+// import Footer from "../Footer";
+// import content from "../../locales/en-us.json";
 import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
 
-export default function Home() {
+const Layout = ({ children }) => {
   return (
-    <div className="container">
+    <>
       <Head>
         <script
           async
@@ -26,15 +27,11 @@ export default function Home() {
           }}
         ></script>
       </Head>
-
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
+      {/* <Header content={content} /> */}
+      {children}
+      {/* <Footer content={content} /> */}
+    </>
   );
-}
+};
+
+export default Layout;
