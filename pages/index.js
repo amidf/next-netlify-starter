@@ -6,6 +6,10 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
+        <script
+          async
+          src="https://www.googleoptimize.com/optimize.js?id=OPT-T9CBT3Z"
+        ></script>
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
         <script
